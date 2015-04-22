@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/info_content"
+    android:weightSum="1">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:text="ปิด"
+        android:id="@+id/info_btn_close" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="name"
+        android:id="@+id/info_txt_name"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="outer"
+        android:id="@+id/info_txt_outer"
+        android:layout_weight="0.06"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/info_txt_comb"
+        android:layout_weight="0.06"
+        android:textAlignment="textStart" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="339dp"
+        android:id="@+id/scrollView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/info_txt_detail" />
+    </ScrollView>
+</LinearLayout>
